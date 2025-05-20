@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="validasi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Portofolio</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="logo.png" style="width: 15%" alt="Logo" />
+        <div class="logo-text">afiyah</div>
+      </div>
+
+      <!-- Navigasi -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Button -->
+      <div class="button">
+        <button class="btn-disable" onclick="scrollToContact()">Hire Me</button>
+      </div>
+
+      <!-- Tombol Hamburger -->
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="home-image">
+          <img src="avatar.png" alt="Avatar" />
+        </div>
+        <div class="home-text">
+          <h1>
+            I <span class="pink">design</span> digital products<br />
+            with <span class="pink">great experience</span>
+          </h1>
+          <p>I’ll create a seamless and beautiful digital experience!</p>
+          <a href="#about" class="btn">Let’s Explore!</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Home -->
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="intro">
+          <h1>Hello!</h1>
+          <p>
+            It's <strong>Febriana Afiyah!</strong> a student majored in
+            <em>Informatics</em> based in Tasikmalaya. I'm interested in
+            challenging myself to gain new knowledge and developing my
+            creativity in fun and creative designs. I hope my abilities can
+            contribute to the growth of your firm.
+          </p>
+        </div>
+
+        <div class="profile">
+          <img
+            src="profil.jpg"
+            style="width: 50%"
+            alt="Profil Febriana Afiyah"
+          />
+        </div>
+
+        <div class="content">
+          <div class="experiences">
+            <h2>Experiences</h2>
+            <p>
+              <strong>Dec 2023 & Dec 2024</strong><br />Committee MUMAS
+              Informatics - Publication and Documentation Division
+            </p>
+            <p>
+              <strong>Aug 2024</strong><br />Committee OMBUS Informatics -
+              Publication and Documentation Division
+            </p>
+          </div>
+        </div>
+
+        <div class="education-expertise">
+          <div class="education">
+            <h2>Education</h2>
+            <p><strong>2019 - 2023</strong><br />SMAN 5 Tasikmalaya - MIPA</p>
+            <p>
+              <strong>2023 - Now</strong><br />Siliwangi University -
+              Informatics
+            </p>
+          </div>
+          <div class="expertise">
+            <h2>Expertise</h2>
+            <div class="skills">
+              <img src="css.png" alt="CSS" />
+              <img src="html.png" alt="HTML" />
+              <img src="canva.png" alt="Canva" />
+              <img src="figma.png" alt="Figma" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Portfolio Section -->
+    <section class="projects" id="portfolio">
+      <h1>My Projects</h1>
+
+      <div class="project">
+        <img src="projects1.png" style="width: 50%" alt="Go! UMKM" />
+        <div class="project-text">
+          <p><strong>UI/UX Design App</strong></p>
+          <h3>Go! UMKM</h3>
+          <p>Aplikasi pendukung wirausaha bisnis UMKM untuk lebih maju!</p>
+          <a href="#" class="project-btn">More shots from this project ↗</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="projects2.png" style="width: 50%" alt="CoolyeahApp" />
+        <div class="project-text">
+          <p><strong>UI/UX Design App</strong></p>
+          <h3>CoolyeahApp</h3>
+          <p>Aplikasi pendukung perkuliahan yang intuitif dan efisien!</p>
+          <a href="#">More shots from this project ↗</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio -->
+
+    <!--Testimonial-->
+    <section class="testimonials">
+      <h1>Here's what my clients are saying about my work</h1>
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div>
+              <h3>Haku Ogino</h3>
+              <p>Product Designer</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "The design really enhances the look of our brand! The details are
+            neat, the colors are in harmony, and it fits perfectly with the
+            brief we were given."
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div>
+              <h3>Ashitaka Emishi</h3>
+              <p>Product Designer</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Thank you! Now the design is more clean, modern, and
+            user-friendly."
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div>
+              <h3>Kiki Koriko</h3>
+              <p>Product Designer</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "Very satisfied with the editing of this design! The Figma files are
+            well organized, easy to understand, and the end result looks
+            professional."
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div>
+              <h3>Chihiro Fujisaki</h3>
+              <p>Product Designer</p>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "The editing you did really made the design come alive!"
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--End Testimonial-->
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="contact-info">
+        <h2>Contact Me</h2>
+        <h2>Let’s work together</h2>
+        <p>
+          We believe that great design can transform an experience. If you have
+          a project or idea that you'd like to bring to life, don't hesitate to
+          contact us.
+        </p>
+        <div class="social-icons">
+          <a href="#"
+            ><img src="linkedin.png" style="width: 5%" alt="LinkedIn"
+          /></a>
+          <a href="#"
+            ><img src="github.png" style="width: 5%" alt="GitHub"
+          /></a>
+          <a href="#"
+            ><img src="instagram.png" style="width: 5%" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+
+        <div class="contact-form">
+            <h3>Kontak Saya</h3>
+            <form id="kontakForm">
+              <input type="text" id="nama" placeholder="Nama Lengkap" required maxlength="50" /><br />
+              <input type="email" id="email" placeholder="Email"  required maxlength="50" /><br />
+              <input type="text" id="hp" placeholder="Nomor Handphone" required 
+              pattern="08[0-9]{8,11}" maxlength="13" title="Masukkan nomor yang valid dimulai dengan 08" /><br />
+              <textarea id="pesan" rows="5" placeholder="Pesan" required maxlength="200"></textarea><br />
+              <button type="submit">Kirim</button>
+              <div id="error" style="color: red; margin-top: 10px;"></div>
+            </form>
+          </div>
+        </div>
+      </section>      
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <h3>PORTOFOLIO</h3>
+        <p>Febriana Afiyah</p>
+        <p>febrianaafiyah128@gmail.com</p>
+      </div>
+
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-brand">
+        <img src="logo.png" style="width: 15%" alt="Logo" />
+        <div class="logo-text">afiyah</div>
+        <p><strong>Let’s start designing your project!</strong></p>
+        <a href="#" class="footer-button">Send us a message!</a>
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      <p>Copyright © 2025 afiyah | All Rights Reserved</p>
+    </div>
+    <!-- End Footer -->
+  </body>
+</html>
